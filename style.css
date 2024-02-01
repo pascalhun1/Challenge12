@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  font-family: "Barlow Semi Condensed";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbe7f6;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+}
+
+.Daniel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url(bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-color: #733fc8;
+  max-width: 606px;
+  img {
+    border: solid #a97fe3;
+  }
+  p {
+    color: #b48dea;
+  }
+}
+
+.Jonathan {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #49556b;
+  max-width: 256px;
+}
+
+.Jeanette {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  max-width: 256px;
+  p {
+    color: #65696c;
+  }
+  .name,
+  h4 {
+    color: #49505a;
+  }
+}
+
+.Patrick {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #18202d;
+  max-width: 606px;
+  img {
+    border: solid #a97fe3;
+  }
+}
+
+.Kira {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  max-width: 256px;
+  margin: 10px;
+  padding: 24px 20px;
+  background-color: #ffffff;
+  p {
+    color: #65696c;
+  }
+  .name,
+  h4 {
+    color: #49505a;
+  }
+}
+
+.mrg {
+  margin: 10px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.brd-r {
+  border-radius: 10px;
+}
+
+.brd-i {
+  border-radius: 50%;
+}
+
+.clr-name {
+  color: white;
+}
+
+.verified {
+  color: #8c9aad;
+  font-size: 13px;
+}
+
+.clr {
+  color: #ae82f5;
+  font-size: 13px;
+}
+
+.h4-clr {
+  color: white;
+}
+
+.p-clr {
+  color: #c1cadb;
+}
+
+@media screen and (max-width: 1179px)
+{
+ .card-container {
+  display: flex;
+  flex-direction: column;
+ } 
+
+ .Kira {
+  max-width: 606px;
+ }
+}
+
+@media screen and (max-width:902px)
+{
+
+  .card {
+    flex-direction: row;
+  }
+
+  .Daniel {
+    max-width: 256px;
+  }
+
+  .Jonathan {
+    max-height: 296px;
+  }
+
+  .Patrick {
+    max-width: 256px;
+    transform: translateY(-163px);
+  }
+
+  .Jeanette {
+    max-height: 262px;
+  }
+
+  .Kira {
+    transform: translatey(-165px);
+    max-width: 533px;
+  }
+
+}
+
+@media screen and (max-width:570px)
+{
+  
+  .card {
+    flex-direction: column;
+  }
+
+  .Daniel, .Patrick, .Kira {
+    max-width: 256px;
+  }
+
+ .Patrick, .Kira {
+  transform: translate(0);
+ }
+}
+
